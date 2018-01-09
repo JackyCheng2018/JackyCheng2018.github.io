@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Jacky&#39;s Blog">
 <meta property="og:description" content="这几天用Hexo &amp;amp; GitHub倒腾博客，每次一执行hexo deploy命令，README.md就得重新写，这肯定不行啊，于是我就上网找了些资料。方法如下：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-09T07:18:09.000Z">
+<meta property="og:updated_time" content="2018-01-09T07:23:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo &amp; GitHub：部署时如何保证README.md不被渲染">
 <meta name="twitter:description" content="这几天用Hexo &amp;amp; GitHub倒腾博客，每次一执行hexo deploy命令，README.md就得重新写，这肯定不行啊，于是我就上网找了些资料。方法如下：">
@@ -362,7 +362,7 @@
       
 
       
-        <p>这几天用Hexo &amp; GitHub倒腾博客，每次一执行hexo deploy命令，README.md就得重新写，这肯定不行啊，于是我就上网找了些资料。方法如下：<a id="more"></a><br>找到主配置文件_config.yml，设置skip_render: README.md。<br>就这么简单。。。<br>好像不行。。。<br>嗯，是不行。<br>11<br>22<br>33<br>44<br>55<br>66<br>77<br>88<br>99</p>
+        <p>这几天用Hexo &amp; GitHub倒腾博客，每次一执行hexo deploy命令，README.md就得重新写，这肯定不行啊，于是我就上网找了些资料。方法如下：<a id="more"></a><br>1.找到主配置文件_config.yml，设置skip_render: README.md。<br>2.在/source/文件夹下新建README.md，然后以后的readme就可以在这里面写了，以后hexo deploy直接将README.md一并部署了。<br>经过测试，可以了。</p>
 
       
     </div>
