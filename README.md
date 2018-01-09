@@ -6,4 +6,4 @@ Hexo + GitHub + WebStorm 搭建个人博客
 #### 怎么回事？
 ##### 怎么回事？
 ###### 怎么回事？
-![](../public/images/avatar.gif.png)
+![好可爱啊](/images/keai.jpg)
