@@ -8,4 +8,3 @@ Hexo + GitHub + WebStorm 搭建个人博客<br>
 松鼠有几只<br>
 快来数一数<br>
 一二三四五<br>
-到底几只？
