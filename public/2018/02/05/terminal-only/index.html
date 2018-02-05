@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="步骤：一、建立本地git仓库cd到本地根目录git init 二、将所有文件添加到暂存区git add . 三、将暂存区的文件提交到仓库git commit -m “xxxxx” 四、在GitHub上创建repository打开https://github.com，点击Start a project，在Repository name上写上库的名字(比如我这次取的gnlyw)，点击Create re">
+<meta name="description" content="步骤：一、建立本地git仓库cd到本地根目录git init 二、将所有文件添加到暂存区git add .">
 <meta name="keywords" content="npm,hexo,github,terminal">
 <meta property="og:type" content="article">
 <meta property="og:title" content="纯用终端命令上传作品到GitHub上">
 <meta property="og:url" content="https://jackycheng2018.github.io/2018/02/05/terminal-only/index.html">
 <meta property="og:site_name" content="Jacky&#39;s Blog">
-<meta property="og:description" content="步骤：一、建立本地git仓库cd到本地根目录git init 二、将所有文件添加到暂存区git add . 三、将暂存区的文件提交到仓库git commit -m “xxxxx” 四、在GitHub上创建repository打开https://github.com，点击Start a project，在Repository name上写上库的名字(比如我这次取的gnlyw)，点击Create re">
+<meta property="og:description" content="步骤：一、建立本地git仓库cd到本地根目录git init 二、将所有文件添加到暂存区git add .">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-05T04:06:40.000Z">
+<meta property="og:updated_time" content="2018-02-05T08:40:29.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="纯用终端命令上传作品到GitHub上">
-<meta name="twitter:description" content="步骤：一、建立本地git仓库cd到本地根目录git init 二、将所有文件添加到暂存区git add . 三、将暂存区的文件提交到仓库git commit -m “xxxxx” 四、在GitHub上创建repository打开https://github.com，点击Start a project，在Repository name上写上库的名字(比如我这次取的gnlyw)，点击Create re">
+<meta name="twitter:description" content="步骤：一、建立本地git仓库cd到本地根目录git init 二、将所有文件添加到暂存区git add .">
 
 
 
@@ -362,14 +362,14 @@
       
 
       
-        <h1 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h1><p>一、建立本地git仓库<br>cd到本地根目录<br>git init</p>
-<p>二、将所有文件添加到暂存区<br>git add .</p>
-<p>三、将暂存区的文件提交到仓库<br>git commit -m “xxxxx”</p>
-<p>四、在GitHub上创建repository<br>打开<a href="https://github.com，点击Start" target="_blank" rel="noopener">https://github.com，点击Start</a> a project，在Repository name上写上库的名字(比如我这次取的gnlyw)，点击Create repository。然后复制一下URL的链接：<a href="https://github.com/JackyCheng2018/gnlyw" target="_blank" rel="noopener">https://github.com/JackyCheng2018/gnlyw</a></p>
-<p>五、将本地仓库关联到GitHub上<br>git remote add origin <a href="https://github.com/JackyCheng2018/gnlyw" target="_blank" rel="noopener">https://github.com/JackyCheng2018/gnlyw</a><br>如果出现错误：fatal:remote origin already exists<br>那就先输入git remote rm origin，<br>再输入git remote add origin <a href="https://github.com/JackyCheng2018/gnlyw就可以了。" target="_blank" rel="noopener">https://github.com/JackyCheng2018/gnlyw就可以了。</a></p>
-<p>六、将本地代码PUSH到GitHub远程仓库<br>git push -u origin master<br>由于新建的远程仓库是空的，所以要加上-u这个参数，以后就不用了，甚至可以用git push就可以了。</p>
-<p>#注意事项：<br>一、如果库里面有README.md文件或者别的什么文件而本地没有，先pull到本地，再push<br>git pull –rebase origin master<br>如果只是写git pull，很可能需要在终端插入信息才行。按esc或者fn+esc键可以切换编辑模式和阅读模式，在阅读模式下输入”:wq”保存退出。</p>
-<p>二、如果上传的HTML文件，可以设置成能看的模式：<br>点Settings，找到GitHub Pages - Source，将None改成master branch，Save，然后就能看到链接<a href="https://jackycheng2018.github.io/gnlyw/，就可以在网上看了。">https://jackycheng2018.github.io/gnlyw/，就可以在网上看了。</a></p>
+        <h1 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h1><p>一、建立本地git仓库<br>cd到本地根目录<br><code>git init</code></p>
+<p>二、将所有文件添加到暂存区<br><code>git add .</code><br><a id="more"></a></p>
+<p>三、将暂存区的文件提交到仓库<br><code>git commit -m &quot;xxxxx&quot;</code></p>
+<p>四、在GitHub上创建repository<br>打开<a href="https://github.com" target="_blank" rel="noopener">https://github.com</a> ，点击Start a project，在Repository name上写上库的名字(比如我这次取的gnlyw)，点击Create repository。然后复制一下URL的链接：<a href="https://github.com/JackyCheng2018/gnlyw" target="_blank" rel="noopener">https://github.com/JackyCheng2018/gnlyw</a></p>
+<p>五、将本地仓库关联到GitHub上<br><code>git remote add origin https://github.com/JackyCheng2018/gnlyw</code><br>如果出现错误：fatal:remote origin already exists<br>那就先输入<code>git remote rm origin</code>，<br>再输入<code>git remote add origin https://github.com/JackyCheng2018/gnlyw</code>就可以了。</p>
+<p>六、将本地代码PUSH到GitHub远程仓库<br><code>git push -u origin master</code><br>由于新建的远程仓库是空的，所以要加上-u这个参数，以后就不用了，甚至可以用<code>git push</code>就可以了。</p>
+<h1 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h1><p>一、如果库里面有README.md文件或者别的什么文件而本地没有，先pull到本地，再push<br><code>git pull --rebase origin master</code><br>如果只是写<code>git pull</code>，很可能需要在终端插入信息才行。按esc或者fn+esc键可以切换编辑模式和阅读模式，在阅读模式下输入”:wq”保存退出。</p>
+<p>二、如果上传的HTML文件，可以设置成能看的模式：<br>点Settings，找到GitHub Pages - Source，将None改成master branch，Save，然后就能看到链接<a href="https://jackycheng2018.github.io/gnlyw/">https://jackycheng2018.github.io/gnlyw/</a> ，就可以在网上看了。</p>
 
       
     </div>
@@ -550,7 +550,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#步骤："><span class="nav-number">1.</span> <span class="nav-text">步骤：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#步骤："><span class="nav-number">1.</span> <span class="nav-text">步骤：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注意事项："><span class="nav-number">2.</span> <span class="nav-text">注意事项：</span></a></li></ol></div>
             
 
           </div>
