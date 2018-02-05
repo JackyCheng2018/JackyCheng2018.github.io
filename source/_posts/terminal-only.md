@@ -29,6 +29,12 @@ cd到本地根目录
 `git push -u origin master`
 由于新建的远程仓库是空的，所以要加上-u这个参数，以后就不用了，甚至可以用`git push`就可以了。
 
+七、以后修改作品的话只需要：
+`git add .`
+`git commit -m "xxxxx"`
+`git push`
+就可以了。如果没有新加文件的话，还可以将前两个命令合并一下`git commit -a -m "xxxxx"`
+
 # 注意事项：
 一、如果库里面有README.md文件或者别的什么文件而本地没有，先pull到本地，再push
 `git pull --rebase origin master`
@@ -36,3 +42,5 @@ cd到本地根目录
 
 二、如果上传的HTML文件，可以设置成能看的模式：
 点Settings，找到GitHub Pages - Source，将None改成master branch，Save，然后就能看到链接https://jackycheng2018.github.io/gnlyw/ ，就可以在网上看了。
+
+三、将GitHub上的项目clone到本地的命令：`git clone 仓库地址`，比如`git clone https://github.com/JackyCheng2018/gnlyw`
