@@ -1,5 +1,5 @@
 ---
-title: 纯用终端命令上传作品到GitHub上
+title: 如何上传作品到GitHub上（只用终端命令）
 date: 2018-02-05 10:32:19
 tags: [npm, hexo, github,terminal]
 categories: GitHub练习
