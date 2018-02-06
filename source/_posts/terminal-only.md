@@ -25,7 +25,7 @@ cd到本地根目录
 那就先输入`git remote rm origin`，
 再输入`git remote add origin https://github.com/JackyCheng2018/gnlyw`就可以了。
 
-六、将本地代码PUSH到GitHub远程仓库
+六、将本地代码Push到GitHub远程仓库
 `git push -u origin master`
 由于新建的远程仓库是空的，所以要加上-u这个参数，以后就不用了，甚至可以用`git push`就可以了。
 
