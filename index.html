@@ -288,7 +288,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/02/08/sshkeys/" itemprop="url">如何在GitHub上添加SSH keys</a></h1>
+                <a class="post-title-link" href="/2018/02/08/sshkeys/" itemprop="url">如何在GitHub上添加SSH keys（只用终端命令）</a></h1>
         
 
         <div class="post-meta">
@@ -362,7 +362,14 @@
       
         
           
-            <h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><p>一、</p>
+            <h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><p>一、首先检查下SSH keys是否已经存在，即id_rsa，id_rsa.pub是否存在<br><code>ls -al ~/.ssh</code></p>
+<p>二、生成SSH keys（若SSH keys不存在）<br>ssh-keygen -t rsa -C “by3963air@163.com”</p>
+<p>三、查看生成的SSH keys中的公钥<br><code>cat ~/.ssh/id_rsa.pub</code></p>
+<p>四、将SSH keys与GitHub关联<br>打开<a href="https://github.com/settings/keys" target="_blank" rel="noopener">https://github.com/settings/keys</a> ，点击New SSH key，Title处随便填，Key处粘贴SSH keys中的公钥，然后点击Add SSH key</p>
+<p>五、测试与GitHub是否绑定成功，出现successfully就说明成功了<br><code>ssh -T git@github.com</code></p>
+<p>六、设置username和email，因为GitHub每次提交都会记录他们（这一步我也忘了我是不是这么弄的了，我好像是用的GitHub Desktop直接就匹配上了，然后没输入这个命令）<br><code>git config --global user.name &quot;JackyCheng2018&quot;</code><br><code>git config --global user.email &quot;by3963air@163.com&quot;</code></p>
+<p>然后就可以上传作品到GitHub上或者从GitHub上clone项目到本地了。</p>
+<h1 id="插曲"><a href="#插曲" class="headerlink" title="插曲"></a>插曲</h1><p>用WebStorm操作的话，好像不用写步骤六</p>
 
           
         
