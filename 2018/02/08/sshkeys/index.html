@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="步骤一、首先检查下SSH keys是否已经存在，即id_rsa，id_rsa.pub是否存在ls -al ~/.ssh 二、生成SSH keys（若SSH keys不存在）ssh-keygen -t rsa -C “by3963air@163.com” 三、查看生成的SSH keys中的公钥cat ~/.ssh/id_rsa.pub 四、将SSH keys与GitHub关联打开https://gi">
+<meta name="description" content="步骤一、首先检查下SSH keys是否已经存在，即id_rsa，id_rsa.pub是否存在ls -al ~/.ssh 二、生成SSH keys（若SSH keys不存在）ssh-keygen -t rsa -C &amp;quot;by3963air@163.com&amp;quot;">
 <meta name="keywords" content="npm,hexo,github,terminal">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何在GitHub上添加SSH keys（只用终端命令）">
 <meta property="og:url" content="https://jackycheng2018.github.io/2018/02/08/sshkeys/index.html">
 <meta property="og:site_name" content="Jacky&#39;s Blog">
-<meta property="og:description" content="步骤一、首先检查下SSH keys是否已经存在，即id_rsa，id_rsa.pub是否存在ls -al ~/.ssh 二、生成SSH keys（若SSH keys不存在）ssh-keygen -t rsa -C “by3963air@163.com” 三、查看生成的SSH keys中的公钥cat ~/.ssh/id_rsa.pub 四、将SSH keys与GitHub关联打开https://gi">
+<meta property="og:description" content="步骤一、首先检查下SSH keys是否已经存在，即id_rsa，id_rsa.pub是否存在ls -al ~/.ssh 二、生成SSH keys（若SSH keys不存在）ssh-keygen -t rsa -C &amp;quot;by3963air@163.com&amp;quot;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-08T10:08:30.000Z">
+<meta property="og:updated_time" content="2018-02-09T02:42:37.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何在GitHub上添加SSH keys（只用终端命令）">
-<meta name="twitter:description" content="步骤一、首先检查下SSH keys是否已经存在，即id_rsa，id_rsa.pub是否存在ls -al ~/.ssh 二、生成SSH keys（若SSH keys不存在）ssh-keygen -t rsa -C “by3963air@163.com” 三、查看生成的SSH keys中的公钥cat ~/.ssh/id_rsa.pub 四、将SSH keys与GitHub关联打开https://gi">
+<meta name="twitter:description" content="步骤一、首先检查下SSH keys是否已经存在，即id_rsa，id_rsa.pub是否存在ls -al ~/.ssh 二、生成SSH keys（若SSH keys不存在）ssh-keygen -t rsa -C &amp;quot;by3963air@163.com&amp;quot;">
 
 
 
@@ -363,7 +363,7 @@
 
       
         <h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><p>一、首先检查下SSH keys是否已经存在，即id_rsa，id_rsa.pub是否存在<br><code>ls -al ~/.ssh</code></p>
-<p>二、生成SSH keys（若SSH keys不存在）<br>ssh-keygen -t rsa -C “by3963air@163.com”</p>
+<p>二、生成SSH keys（若SSH keys不存在）<br><code>ssh-keygen -t rsa -C &quot;by3963air@163.com&quot;</code><br><a id="more"></a></p>
 <p>三、查看生成的SSH keys中的公钥<br><code>cat ~/.ssh/id_rsa.pub</code></p>
 <p>四、将SSH keys与GitHub关联<br>打开<a href="https://github.com/settings/keys" target="_blank" rel="noopener">https://github.com/settings/keys</a> ，点击New SSH key，Title处随便填，Key处粘贴SSH keys中的公钥，然后点击Add SSH key</p>
 <p>五、测试与GitHub是否绑定成功，出现successfully就说明成功了<br><code>ssh -T git@github.com</code></p>
