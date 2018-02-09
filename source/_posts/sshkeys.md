@@ -9,7 +9,8 @@ categories: GitHub练习
 `ls -al ~/.ssh`
 
 二、生成SSH keys（若SSH keys不存在）
-ssh-keygen -t rsa -C "by3963air@163.com"
+`ssh-keygen -t rsa -C "by3963air@163.com"`
+<!--more-->
 
 三、查看生成的SSH keys中的公钥
 `cat ~/.ssh/id_rsa.pub`
