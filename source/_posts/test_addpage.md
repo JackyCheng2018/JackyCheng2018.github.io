@@ -1,6 +1,6 @@
 ---
 title: "新建文章"和"新建页面"是什么意思？有啥区别？
-date:
+date: 2019-06-12 15:57:32
 tags: [test, hexo]
 categories: 平时练习
 ---
