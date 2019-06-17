@@ -4,6 +4,7 @@ title: 关于博主的那点事儿
 
 ## 前端作品
 我的前端作品按照工作的先后顺序排列的，前面的作品很粗糙，后面的会好一点，当然也还是需要继续努力的！
+第7个作品：[旅游网](/lyw/)
 第6个作品：[联众恒久](/lzhj/)
 第5个作品：[简尚装饰](/jszs/)
 第4个作品：国内旅游网用户后台：[注册](/gnlyw/)、[修改密码](/gnlyw/huiyuanxinxi_cl_gaimima.html)、[个人信息](/gnlyw/huiyuanxinxi_cl_xinxi.html)、[景区列表](/gnlyw/huiyuanxinxi_cl.html)
